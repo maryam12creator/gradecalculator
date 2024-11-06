@@ -1,0 +1,147 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1.title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.input-label {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #333;
+}
+
+.input-field {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #4CAF50;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: #45a049;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+
+.btn-success {
+    background-color: #2196F3;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #1976D2;
+}
+
+.btn-secondary {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #e53935;
+}
+
+.subjects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.subject-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subject-input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #4CAF50;
+    border-radius: 6px;
+    width: 60%;
+}
+
+.result-container {
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.result-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1.title {
+        font-size: 2rem;
+    }
+
+    .input-field,
+    .subject-input {
+        width: 100%;
+    }
+
+    .subject-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

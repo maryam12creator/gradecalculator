@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Grade Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Font for nice typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">Grade Calculator</h1>
+
+        <!-- Step 1: Ask the user for the number of subjects -->
+        <div id="subjectCountSection" class="input-container">
+            <label for="subjectCount" class="input-label">How many subjects do you have?</label>
+            <input type="number" id="subjectCount" class="input-field" min="1" required>
+            <button id="generateSubjects" class="btn btn-primary">Generate Subject Inputs</button>
+        </div>
+
+        <!-- Step 2: Dynamically generated subject input fields will appear here -->
+        <form id="gradeForm" class="form" style="display:none;">
+            <div id="subjectsContainer" class="subjects-container"></div>
+            <button type="submit" class="btn btn-success">Calculate Grade</button>
+        </form>
+
+        <!-- Step 3: Result will be displayed here -->
+        <div id="result" class="result-container" style="display:none;">
+            <p class="result-text">Average: <span id="average"></span></p>
+            <p class="result-text">Grade: <span id="grade"></span></p>
+            <button id="resetBtn" class="btn btn-secondary">Start Over</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
